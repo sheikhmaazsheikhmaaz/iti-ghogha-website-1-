@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITI Ghogha | Industrial Training Institute</title>
+  <meta name="description" content="ITI Ghogha - Courses, admission information, facilities and contact details.">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;color:#172033;background:#f6f8fc;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .top{background:#0b3d91;color:#fff;padding:8px 5%;font-size:14px;text-align:center}
+    header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px #0001}
+    nav{max-width:1200px;margin:auto;padding:15px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .logo{display:flex;align-items:center;gap:12px;font-weight:800;color:#0b3d91;font-size:21px}
+    .logo-mark{width:44px;height:44px;border-radius:12px;background:#ffb703;color:#0b3d91;display:grid;place-items:center;font-weight:900}
+    .links{display:flex;gap:24px;align-items:center}
+    .links a{font-weight:600;color:#27334d}
+    .links a:hover{color:#0b3d91}
+    .menu{display:none;border:0;background:#0b3d91;color:white;padding:9px 12px;border-radius:8px;font-size:20px}
+    .hero{background:linear-gradient(135deg,#0b3d91,#1261d6);color:#fff;padding:80px 5%}
+    .hero-inner{max-width:1200px;margin:auto;display:grid;grid-template-columns:1.3fr .7fr;gap:50px;align-items:center}
+    .badge{display:inline-block;background:#ffffff20;border:1px solid #ffffff40;padding:7px 14px;border-radius:30px;margin-bottom:18px}
+    h1{font-size:clamp(38px,6vw,64px);line-height:1.08;margin-bottom:18px}
+    .hero p{font-size:19px;max-width:680px;color:#e9f1ff}
+    .buttons{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+    .btn{padding:13px 20px;border-radius:10px;font-weight:700;display:inline-block}
+    .primary{background:#ffb703;color:#16213a}
+    .secondary{border:1px solid #ffffff80;color:#fff}
+    .hero-card{background:#fff;color:#172033;border-radius:22px;padding:28px;box-shadow:0 18px 45px #001b4d55}
+    .hero-card h3{color:#0b3d91;margin-bottom:15px}
+    .hero-card div{padding:12px 0;border-bottom:1px solid #e8ecf3}
+    .hero-card div:last-child{border:0}
+    section{padding:70px 5%}
+    .container{max-width:1200px;margin:auto}
+    .section-title{text-align:center;margin-bottom:38px}
+    .section-title h2{font-size:36px;color:#102a56}
+    .section-title p{color:#667085;margin-top:8px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .card{background:#fff;padding:28px;border-radius:18px;box-shadow:0 5px 25px #14213d0d;border:1px solid #e8edf5}
+    .icon{font-size:34px;margin-bottom:12px}
+    .card h3{color:#0b3d91;margin-bottom:8px}
+    .card p{color:#667085}
+    .about{background:#fff}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .about-box{background:#eef5ff;border-radius:22px;padding:35px}
+    .about-box h3{font-size:28px;color:#0b3d91;margin-bottom:12px}
+    .list{margin-top:18px;display:grid;gap:12px}
+    .list div{background:#fff;padding:12px 15px;border-radius:10px}
+    .notice{background:#fff7df;border-left:5px solid #ffb703;padding:20px;border-radius:10px}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+    .contact-card{background:#fff;border-radius:18px;padding:28px;border:1px solid #e8edf5}
+    .contact-card p{margin:10px 0;color:#566176}
+    footer{background:#102a56;color:#fff;text-align:center;padding:30px 5%}
+    footer p{color:#cbd7ee;margin-top:6px}
+    @media(max-width:800px){
+      .links{display:none;position:absolute;top:74px;left:0;right:0;background:#fff;padding:20px 5%;flex-direction:column;box-shadow:0 10px 20px #0001}
+      .links.show{display:flex}
+      .menu{display:block}
+      .hero-inner,.about-grid,.contact-grid{grid-template-columns:1fr}
+      .cards{grid-template-columns:1fr}
+      .hero{padding:55px 5%}
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top">🎓 ITI Ghogha — Skill • Training • Career</div>
+
+  <header>
+    <nav>
+      <a class="logo" href="#home">
+        <span class="logo-mark">ITI</span>
+        <span>ITI Ghogha</span>
+      </a>
+      <button class="menu" onclick="toggleMenu()">☰</button>
+      <div class="links" id="links">
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#courses" onclick="closeMenu()">Courses</a>
+        <a href="#facilities" onclick="closeMenu()">Facilities</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div>
+          <span class="badge">Industrial Training Institute</span>
+          <h1>ITI Ghogha</h1>
+          <p>યુવાનોને ટેક્નિકલ અને વ્યવસાયિક કૌશલ્ય શીખવીને તેમના ભવિષ્ય માટે તૈયાર કરતું એક સુંદર અને modern training website.</p>
+          <div class="buttons">
+            <a class="btn primary" href="#courses">Courses જુઓ</a>
+            <a class="btn secondary" href="#contact">Contact કરો</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>📢 Important Information</h3>
+          <div>🎓 Admission information અહીં મૂકો</div>
+          <div>🛠️ Trade / Course details અહીં મૂકો</div>
+          <div>📅 Training & timetable અહીં મૂકો</div>
+          <div>📞 Official contact અહીં મૂકો</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container about-grid">
+        <div>
+          <div class="section-title" style="text-align:left;margin-bottom:20px">
+            <h2>ITI Ghogha વિશે</h2>
+            <p>તમારા institute માટે professional introduction</p>
+          </div>
+          <p>
+            ITI Ghogha માટે આ website વિદ્યાર્થીઓ અને વાલીઓને course, admission,
+            facilities અને contact information સરળતાથી જાણવા માટે બનાવવામાં આવી છે.
+          </p>
+          <div class="list">
+            <div>✅ Practical skill training</div>
+            <div>✅ Technical education</div>
+            <div>✅ Career-oriented learning</div>
+          </div>
+        </div>
+        <div class="about-box">
+          <h3>તમારું Skill, તમારું Future 🚀</h3>
+          <p>અહીં ITIની સાચી માહિતી, ફોટા, achievements અને students માટે જરૂરી announcements ઉમેરો.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Courses</h2>
+          <p>અહીં ITI Ghoghaમાં ચાલતા સાચા trades ઉમેરો.</p>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="icon">💻</div>
+            <h3>COPA</h3>
+            <p>Computer અને IT સંબંધિત training માટે course section.</p>
+          </div>
+          <div class="card">
+            <div class="icon">⚙️</div>
+            <h3>Technical Trade</h3>
+            <p>તમારા instituteમાં ઉપલબ્ધ technical tradeની વિગતો અહીં ઉમેરો.</p>
+          </div>
+          <div class="card">
+            <div class="icon">🔧</div>
+            <h3>Practical Training</h3>
+            <p>Workshop અને practical trainingની માહિતી અહીં મૂકી શકાય છે.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="facilities" class="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>Facilities</h2>
+          <p>Instituteની facilities વિદ્યાર્થીઓને એક નજરમાં બતાવો.</p>
+        </div>
+        <div class="cards">
+          <div class="card"><div class="icon">🖥️</div><h3>Computer Lab</h3><p>Computer practical learning માટે lab details.</p></div>
+          <div class="card"><div class="icon">🛠️</div><h3>Workshop</h3><p>Practical અને technical training માટે workshop.</p></div>
+          <div class="card"><div class="icon">📚</div><h3>Learning</h3><p>Students માટે study અને skill development information.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="notice">
+          <strong>⚠️ Note:</strong> આ templateમાં instituteની official વિગતો નાખવાની બાકી છે. Address, phone number, email, exact trades અને admission dates official માહિતી પ્રમાણે બદલો.
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact Us</h2>
+          <p>અહીં ITI Ghoghaની official contact details ઉમેરો.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>📍 Address</h3>
+            <p>ITI Ghogha, Ghogha, Bhavnagar, Gujarat, India</p>
+          </div>
+          <div class="contact-card">
+            <h3>📞 Contact</h3>
+            <p>Phone: YOUR PHONE NUMBER</p>
+            <p>Email: YOUR EMAIL ADDRESS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>ITI Ghogha</strong>
+    <p>© 2026 ITI Ghogha. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu(){
+      document.getElementById('links').classList.toggle('show');
+    }
+    function closeMenu(){
+      document.getElementById('links').classList.remove('show');
+    }
+  </script>
+</body>
+</html>
